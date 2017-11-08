@@ -1,3 +1,64 @@
 body {
     background: #f9f9f9;
 }
+
+.fade-in {
+    -webkit-animation-name: reveal; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-fill-mode: forwards;
+    animation-name: reveal;
+    animation-duration: 1s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes reveal {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes reveal {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.fade-in-top-bottom {
+    -webkit-animation-name: revealTopBottom; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-name: revealTopBottom;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes revealTopBottom {
+    0%   {background: #f9f9f9}
+    10%  {background: -webkit-linear-gradient(to bottom, transparent, #f9f9f9 10%)}
+    20%  {background: -webkit-linear-gradient(to bottom, transparent, #f9f9f9 20%)}
+    30%  {background: -webkit-linear-gradient(to bottom, transparent, #f9f9f9 30%)}
+    40%  {background: -webkit-linear-gradient(to bottom, transparent, #f9f9f9 40%)}
+    50%  {background: -webkit-linear-gradient(to bottom, transparent, #f9f9f9 50%)}
+    60%  {background: -webkit-linear-gradient(to bottom, transparent, #f9f9f9 60%)}
+    70%  {background: -webkit-linear-gradient(to bottom, transparent, #f9f9f9 70%)}
+    80%  {background: -webkit-linear-gradient(to bottom, transparent, #f9f9f9 80%)}
+    90%  {background: -webkit-linear-gradient(to bottom, transparent, #f9f9f9 90%)}
+    100% {background: transparent}
+}
+
+/* Standard syntax */
+@keyframes revealTopBottom {
+    0%   {background: #f9f9f9}
+    10%  {background: linear-gradient(to bottom, transparent, #f9f9f9 10%)}
+    20%  {background: linear-gradient(to bottom, transparent, #f9f9f9 20%)}
+    30%  {background: linear-gradient(to bottom, transparent, #f9f9f9 30%)}
+    40%  {background: linear-gradient(to bottom, transparent, #f9f9f9 40%)}
+    50%  {background: linear-gradient(to bottom, transparent, #f9f9f9 50%)}
+    60%  {background: linear-gradient(to bottom, transparent, #f9f9f9 60%)}
+    70%  {background: linear-gradient(to bottom, transparent, #f9f9f9 70%)}
+    80%  {background: linear-gradient(to bottom, transparent, #f9f9f9 80%)}
+    90%  {background: linear-gradient(to bottom, transparent, #f9f9f9 90%)}
+
+    100% {background: transparent}
+}

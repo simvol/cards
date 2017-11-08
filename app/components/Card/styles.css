@@ -4,6 +4,8 @@
     margin: 20px;
     margin-top: 50px;
     position: relative;
+
+    /* opacity: 0; */
 }
 
 .cardHeader {
@@ -17,6 +19,10 @@
     justify-content: center;
     align-items: center;
     background: ivory;
+}
+
+img {
+    z-index: -1;
 }
 
 .tollImage {
@@ -35,4 +41,5 @@
     position: relative;
     display: flex;
     justify-content: center;
+    background: #f9f9f9;
 }
